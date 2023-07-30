@@ -1,4 +1,4 @@
-package top100;
+package top100.search;
 
 import java.util.HashMap;
 import java.util.Map;

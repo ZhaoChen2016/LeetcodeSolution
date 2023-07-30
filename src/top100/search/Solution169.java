@@ -1,4 +1,4 @@
-package top100;
+package top100.search;
 
 import javax.swing.plaf.IconUIResource;
 import java.util.HashMap;
