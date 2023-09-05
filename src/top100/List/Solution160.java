@@ -34,6 +34,18 @@ public class Solution160 {
         return null;
     }
 
+    public static ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null){
+            return null;
+        }
+        ListNode pA = headA, pB = headB;
+        while (pA != pB){
+            pA = pA.next != null ? pA.next : headB;
+            pB = pB.next != null ? pB.next : headA;
+        }
+        return pA;
+    }
+
     public static void main(String[] args) {
         ListNode list1 = new ListNode(1);
         list1.next = new ListNode(2);
